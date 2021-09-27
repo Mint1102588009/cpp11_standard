@@ -5,9 +5,10 @@ class P
 {
 public:
     P(int a, int b){
-        std::cout << "P(int,int), a=" << a << " b=" << std::endl;
+        std::cout << "P(int,int):a=" << a << " b=" << b << std::endl;
     }
     P(std::initializer_list<int> initlist){
+        std::cout << "P(std::initializer_list<int> initlist):" << std::endl;
         for(auto i : initlist)
             std::cout << i << " ";
         std::cout << std::endl;
